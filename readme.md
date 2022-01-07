@@ -166,7 +166,7 @@ uwsgi_param  SERVER_NAME        $server_name;
 
 5. 「helloWorld_nginx.conf」ファイルを作成して、以下の内容を記載
 
-```json
+```conf
 upstream django {
     server 127.0.0.1:8001;
 }
