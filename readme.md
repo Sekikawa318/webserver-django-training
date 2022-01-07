@@ -42,7 +42,7 @@ brew install nginx
 ### 4. uWSGI
 ```
 pip install uwsgi
-pip show uswsgi
+pip show uwsgi
 ```
 - uwsgiの情報がでればOK
 
