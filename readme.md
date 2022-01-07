@@ -48,7 +48,7 @@ pip show uswsgi
 
 ---
 
-## 2. Djangoでhello worldサイトを作成する[参考](https://docs.djangoproject.com/ja/4.0/intro/tutorial01/)
+## 2. Djangoでhello worldサイトを作成する ([参考](https://docs.djangoproject.com/ja/4.0/intro/tutorial01/))
 1. プロジェクトを作りたいディレクトリに移動
 2. 以下コマンドを実行する
 
@@ -118,7 +118,7 @@ python manage.py runserver 0.0.0.0:8000
 
 ---
 
-## 3. uWSGIサーバの設定[参考](https://qiita.com/ming_hentech/items/9e21fe175988448e204b)
+## 3. uWSGIサーバの設定 ([参考](https://qiita.com/ming_hentech/items/9e21fe175988448e204b))
 
 ```sh
 # 8000ポートでサーバ起動(uwsgiはWebサーバ機能も持っているらしい)
