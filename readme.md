@@ -123,7 +123,8 @@ python manage.py runserver 0.0.0.0:8000
 
 ## 3. uWSGIサーバの設定 ([参考](https://qiita.com/ming_hentech/items/9e21fe175988448e204b))
 - WebサーバとDjangoを繋ぐ役割をする
-- Webサーバ(8000ポート) → uWSGI(8001ポート) → Django
+- 最終的にはこの流れ：Webサーバ(8000ポート) → uWSGI(8001ポート) → Django
+    - uWSGIサーバはWebサーバとしても使用できるらしいので、ひとまず、uWSGI(8000ポート) → Djangoの疎通ができることを確認する 
 
 ```sh
 # 8000ポートでサーバ起動(uwsgiはWebサーバ機能も持っているらしい)
