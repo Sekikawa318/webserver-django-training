@@ -24,6 +24,7 @@
 - [Pythonインストールサイト](https://www.python.org/downloads/)からインストールする
 
 ### 2. Django
+- ターミナルで以下を実行する
 ```shell
 pip install django 
 pip show django
@@ -32,6 +33,7 @@ pip show django
 
 ### 3. Nginx
 #### macの人(homebrewが入っていない人は[インストール](https://brew.sh/index_ja))
+- ターミナルで以下を実行する
 ```shell
 brew install nginx
 ```
@@ -40,6 +42,7 @@ brew install nginx
 - [サイトからインストール](http://nginx.org/en/download.html)
 
 ### 4. uWSGI
+- ターミナルで以下を実行する
 ```
 pip install uwsgi
 pip show uwsgi
