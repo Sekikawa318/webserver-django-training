@@ -122,6 +122,8 @@ python manage.py runserver 0.0.0.0:8000
 ---
 
 ## 3. uWSGIサーバの設定 ([参考](https://qiita.com/ming_hentech/items/9e21fe175988448e204b))
+- WebサーバとDjangoを繋ぐ役割をする
+- Webサーバ(8000ポート) → uWSGI(8001ポート) → Django
 
 ```sh
 # 8000ポートでサーバ起動(uwsgiはWebサーバ機能も持っているらしい)
@@ -136,6 +138,8 @@ uwsgi --http :8000 --module helloWorld.wsgi --chdir [プロジェクトのパス
 ---
 
 ## 4. Webサーバ(Nginx)の設定
+- HTTPリクエストを受け取る口になる(Webサーバ)
+
 1. 以下のコマンドを実行して起動確認する
 ```sh
 nginx
@@ -146,7 +150,7 @@ nginx
 
 
 3. 「uwsgi_params」ファイルをプロジェクト直下に作成
-4. 以下の内容をコピペ
+4. 以下の内容をコピペ(決まり文句らしい)
 
 ```
 uwsgi_param  QUERY_STRING       $query_string;
